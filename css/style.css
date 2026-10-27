@@ -1,1 +1,50 @@
-
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#18352a;background:#fff;line-height:1.6}
+a{color:inherit}
+.container{width:min(1120px,92%);margin:0 auto}
+header{background:#fff;border-bottom:1px solid #e5ebe7;position:sticky;top:0;z-index:10}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:1.15rem;white-space:nowrap}
+.brand img{width:48px;height:48px;object-fit:contain;border-radius:8px}
+nav{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px}
+nav a{padding:9px 11px;text-decoration:none;font-size:.92rem;font-weight:600;border-radius:7px}
+nav a:hover{background:#edf5ef;color:#1f6b3d}
+main{min-height:70vh}
+.hero{padding:82px 0 72px;background:linear-gradient(180deg,#f5faf6 0%,#fff 100%)}
+.hero-grid{display:grid;grid-template-columns:1.45fr .85fr;gap:48px;align-items:center}
+.hero h1,.page-hero h1{font-size:clamp(2rem,4vw,3.45rem);line-height:1.12;margin:10px 0 20px;color:#163c2a}
+.lead{font-size:1.12rem;color:#52655b;max-width:720px}
+.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.76rem;font-weight:800;color:#2d7a48}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:11px 17px;border-radius:7px;text-decoration:none;font-weight:700;border:1px solid #2d7a48}
+.btn.primary{background:#2d7a48;color:#fff}
+.btn.secondary{background:#fff;color:#2d7a48}
+.btn:hover{opacity:.88}
+.hero-card,.card{background:#fff;border:1px solid #e0e9e3;border-radius:12px;padding:26px;box-shadow:0 8px 24px rgba(20,60,40,.06)}
+.hero-card h3{margin-top:0}
+section{padding:66px 0}
+section h2{font-size:clamp(1.55rem,3vw,2.2rem);margin:8px 0 24px;color:#173e2b}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card h2,.card h3{margin-top:0}
+.card ul,.hero-card ul{padding-left:21px;margin-bottom:0}
+.card li,.hero-card li{margin:7px 0}
+.band{background:#edf5ef}
+.page-hero{padding:58px 0 50px;background:#f5faf6;border-bottom:1px solid #e4ebe6}
+footer{background:#163c2a;color:#fff;margin-top:30px}
+.footer-row{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.small{font-size:.9rem}
+@media (max-width:900px){
+.nav{align-items:flex-start;padding:14px 0;flex-direction:column}
+nav{justify-content:flex-start}
+.hero-grid,.grid-3,.grid-2{grid-template-columns:1fr}
+.hero{padding:58px 0}
+section{padding:48px 0}
+}
+@media (max-width:560px){
+nav a{padding:7px 8px;font-size:.84rem}
+.brand img{width:42px;height:42px}
+.hero h1,.page-hero h1{font-size:2rem}
+.footer-row{flex-direction:column;justify-content:center;padding:18px 0}
+}
